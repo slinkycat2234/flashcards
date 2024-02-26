@@ -10,14 +10,14 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
 }
 
-export type VibeType = 'Professional' | 'Casual' | 'Funny';
+export type SubjectType = 'AP Chemistry' | 'AP Physics' | 'AP Calculus BC' | 'AP Language';
 
 interface DropDownProps {
-  vibe: VibeType;
-  setVibe: (vibe: VibeType) => void;
+  vibe: SubjectType;
+  setVibe: (vibe: SubjectType) => void;
 }
 
-let vibes: VibeType[] = ['Professional', 'Casual', 'Funny'];
+let subjects: SubjectType[] = ['AP Chemistry' , 'AP Physics' , 'AP Calculus BC', 'AP Language'];
 
 export default function DropDown({ vibe, setVibe }: DropDownProps) {
   return (
@@ -50,7 +50,7 @@ export default function DropDown({ vibe, setVibe }: DropDownProps) {
           key={vibe}
         >
           <div className="">
-            {vibes.map((vibeItem) => (
+            {subjects.map((vibeItem) => (
               <Menu.Item key={vibeItem}>
                 {({ active }) => (
                   <button
