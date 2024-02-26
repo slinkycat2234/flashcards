@@ -16,7 +16,7 @@ import {
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(false);
   const [bio, setBio] = useState('');
-  const [subject, setSubject] = useState<SubjectType>('AP Language');
+  const [subject, setSubject] = useState<SubjectType>('AP Language 🗣️');
   const [generatedBios, setGeneratedBios] = useState<String>('');
   // const [isGPT, setIsGPT] = useState(false);
 
