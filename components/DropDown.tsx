@@ -10,14 +10,15 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
 }
 
-export type SubjectType = 'AP Chemistry' | 'AP Physics' | 'AP Calculus BC' | 'AP Language';
+export type SubjectType = 'AP Chemistry 🧪' | 'AP Physics C: Mechanics 🧰' | 'AP Calculus BC ➕' | 'AP Language 🗣️' | 'AP World History 🏰' | 'AP Human Geography 🌎' | 
+                          'AP Environmental Science 🦠' | 'AP Biology 🧬' | 'AP US History 🇺🇸' | 'AP Statistics 📈' | 'AP Economics 💰';
 
 interface DropDownProps {
   vibe: SubjectType;
   setVibe: (vibe: SubjectType) => void;
 }
 
-let subjects: SubjectType[] = ['AP Chemistry' , 'AP Physics' , 'AP Calculus BC', 'AP Language'];
+let subjects: SubjectType[] = ['AP Chemistry 🧪' , 'AP Physics C: Mechanics 🧰' , 'AP Calculus BC ➕', 'AP Language 🗣️', 'AP World History 🏰', 'AP Human Geography 🌎', 'AP Environmental Science 🦠', 'AP Biology 🧬', 'AP US History 🇺🇸', 'AP Statistics 📈', 'AP Economics 💰' ];
 
 export default function DropDown({ vibe, setVibe }: DropDownProps) {
   return (
